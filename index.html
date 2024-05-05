@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">Rock, Paper, Scissors</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="playLink">Play</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Leaderboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li> 
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="jumbotron text-center bg-primary text-white">
+      <h1 class="display-4">Welcome to Rock, Paper, Scissors</h1>
+      <p class="lead">The ultimate showdown of wits and strategy.</p>
+      <button id="playNowBtn" class="btn btn-light btn-lg">Play Now</button>
+    </section>
+
+    <section class="container my-5" id="gameSection" style="display: none;">
+      <h2 class="text-center mb-4">Let's Play!</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+          <img src="https://imgs.search.brave.com/yXnq95r19nM6EFOuuvzFBU-j1KN3KUALwvKz9N074o0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE0/NDQzMTI2NDU5MTAt/ZmZhOTczNjU2ZWJh/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TVRCOGZI/TjBiMjVsYzN4bGJu/d3dmSHd3Zkh4OE1B/PT0.jpeg" alt="Rock" class="img-fluid mb-3" id="rockBtn">
+          <h3>Rock</h3>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="https://imgs.search.brave.com/gWAPEcqM119ItJOeYhpFUh7hO5m92mU8kU3n6K6Ekgg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNDgw/OTQ5NTk1L3Bob3Rv/L3RvaWxldC1wYXBl/ci5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9U0tucTd6b3Q0/eEIza2tZaW1STS1q/RzJydXRISVRkRlJL/aGJ6YUtSWl9fOD0" alt="Paper" class="img-fluid mb-3" id="paperBtn">
+          <h3>Paper</h3>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="https://imgs.search.brave.com/5hR1LrwB6OHyC5E5JYkRG7pXP2UgSx9o9ltiswnXNKI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTIz/MzU1NzQ5L3Bob3Rv/L3NjaXNzb3ItY3V0/LW91dC1vbi13aGl0/ZS5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9LU5xSVBCWDFn/NG9nM2pVY2dSR2RK/VWdSUTkydHV6b1NI/TjJsbE4wanl2RT0" alt="Scissors" class="img-fluid mb-3" id="scissorsBtn">
+          <h3>Scissors</h3>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <h4 id="resultMessage"></h4>
+        <p id="playerScore">Your Score: 0</p>
+        <p id="computerScore">Computer Score: 0</p>
+      </div>
+    </section>
+
+    
+  </main>
+
+  <footer class="bg-primary text-white py-3 text-center">
+    <p>&copy; 2023 Rock, Paper, Scissors. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
